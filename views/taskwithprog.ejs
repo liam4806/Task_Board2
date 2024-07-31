@@ -1,11 +1,14 @@
 <%- include('./layout/header')%>
     <%- include('./layout/navbar')%>
+    <link rel="stylesheet" href="/css/projectler.css">
     <main>
 <body>
 <div class="detail-container">
-            <a href="/team/<%=teamid%>">Back to Team dashboard</a>
+            <div class="back">
+                <a href="/team/<%=teamid%>">Back to Team dashboard</a>
+            </div>
             <div class="project-details">
-                <h1>Proj: <%=projdata.project_name%> Dashboard</h1>
+                <h1>Project: <%=projdata.project_name%> Dashboard</h1>
                 <form class="form-details" action="/update/project/<%=projdata._id%>?_method=PUT" method="post">  <!-- Just an example action for form submitting-->
                 <input type="hidden" name="_method" value="PUT">  <!-- since it is updating the DB, I think it should be in PUT method. This is just a demo code.-->
                 <div class="form-group">
@@ -24,23 +27,26 @@
                 </div>
                 </div>
                 <div class="form-group">
-                    <label for="startdate">Start Date</label>
+                    <label for="startdate">Start Date:</label>
                     <input type="date" class="form-date" id="startdate" name="startdate" value="<%=projdata.startdate.toISOString().substring(0, 10);%>" >
                 </div>
                 <div class="form-group">
-                    <label for="enddate">End Date</label>
+                    <label for="enddate">End Date:</label>
                     <input type="date" class="form-date" id="enddate" name="enddate" value="<%=projdata.enddate.toISOString().substring(0, 10);%>">
                 </div>
                 <input type="hidden" name ="teamid" value="<%=teamid%>">
-                <input type="submit" value="Save">
                 </form>
-                <form action="/delete/<%=teamid%>/project/<%=projdata._id%>?_method=DELETE" method="POST" >
-                    <input type="hidden" name="_method" value="DELETE">
-                <input type="submit" value="Delete Project" class="delete">
-                </form>
-                <form action="/team/<%=teamid%>/project/task/<%=projdata._id%>" method="GET">
-                    <input type="submit" value="Add task">
-                </form>
+                <div class="butons"> 
+                    <input type="submit" value="Save">
+            
+                    <form action="/delete/<%=teamid%>/project/<%=projdata._id%>?_method=DELETE" method="POST" >
+                        <input type="hidden" name="_method" value="DELETE">
+                    <input type="submit" value="Delete Project" class="delete">
+                    </form>
+                    <form action="/team/<%=teamid%>/project/task/<%=projdata._id%>" method="GET">
+                        <input type="submit" value="Add task">
+                    </form>
+                </div>
             </div>
             
 <div class="row">

@@ -1,0 +1,80 @@
+/* topboard */
+.TopBoard{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.TopBoard a{
+    color: black;
+    text-decoration: none;
+}
+
+/* team */
+.Team{
+    background-color: #8f98cc3b;
+    width: 30%; 
+    height: 200px; 
+    margin: 10px; 
+    padding: 0px 20px;
+    box-sizing: border-box; 
+    border: 2.5px solid #4d5cbb;
+    box-shadow: 6px 6px 5px #00000032;
+    border-radius: 15px;
+}
+
+.Team h2{
+    text-align: center;
+    white-space: nowrap; 
+    width: auto; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.Team h2:hover{
+    text-decoration: underline;
+}
+
+.task{
+    max-height: 118px;
+    overflow-y: auto;
+}
+
+.task a{
+    display: block;
+    padding: 5px;
+    text-align: justify;
+}
+
+.task a:hover{
+    background-color: #4d5cbb28;
+}
+
+/* create board */
+.createboard{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.createboard h3{
+    margin-top: 60px;
+}
+
+.createboard a{
+    border: 2.5px solid #4d5cbb;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.createboard a:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}

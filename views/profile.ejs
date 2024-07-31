@@ -1,8 +1,9 @@
 <%- include('./layout/header')%>
     <%- include('./layout/navbar')%>
+    <link rel="stylesheet" href="/css/profile.css">
     <main>
         <h2>Profile</h2>
-        <p>Welcome <%= user.name%></p>
+        <p>Welcome <span> <%= user.name%> </span></p>
         <p>Name: <%= user.name%></p>
         <p>Email: <%= user.email%></p>
         <li role=”presentation”><a href=/profile/search>Search <i class=”fa fa-search”></i> </a></li>

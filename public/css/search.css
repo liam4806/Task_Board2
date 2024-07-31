@@ -1,0 +1,51 @@
+/* usercard */
+.usercard.col-lg-3{
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* nav */
+.butons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropdown-menu h4{
+    margin-top: 15px;
+}
+
+nav li{
+    font-size: 18px;
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+/* button */
+button[type=submit]{
+    background-color: white;
+    padding: 8px 16px;
+    margin: 10px 8px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2.5px solid #4d5cbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}

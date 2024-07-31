@@ -1,10 +1,8 @@
 <%- include('./layout/header')%> 
 <%- include('./layout/navbar')%>
+<link rel="stylesheet" href="/css/search.css">
 
 <body>
-
-
-<hr>
     <% result.forEach((user)=> {%> 
         <% if(user.id == loguser.id){%>
           <%= friends%>
@@ -19,6 +17,7 @@
             <button type="submit" id="friendadding" onclick="addFriend('<%=user.id%>'); disableButton();" class="btn add accept friend-add"><i class="fa fa-user"></i> Add Friend</button>
         </form>
 	</div>
+  <hr>
                 <%} %>
 
                 <%}
@@ -42,8 +41,8 @@
                           <div>
                             <h4><%= users.name%></h4>
                           </div>
-                          <div>
-                              
+                          <div class="butons">
+                        
                               <div style="width: 50%; display: inline;">
                                 <input type="hidden" name="senderId" id="senderId" value="<%= users.userId%>">
                                 <input type="hidden" name="senderName" id="senderName" value="<%= users.name%>">

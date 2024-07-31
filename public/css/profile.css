@@ -1,0 +1,42 @@
+/* profile */
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+p span{
+    color: #4d5cbb;
+    text-align: center;
+    font-weight: bold;
+}
+
+main p{
+    font-size: 16px;
+}
+
+/* button */
+main li{
+    list-style-type: none;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+main li a{
+    color: black;
+    background-color: white;
+    padding: 8px 16px;
+    margin: 10px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2.5px solid #4d5cbb;
+    border-radius: 20px;
+
+}
+
+main li a:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}

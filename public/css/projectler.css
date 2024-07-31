@@ -1,0 +1,210 @@
+/* detail-container, board_content*/
+.detail-container,.board_content{
+    margin-top: 45px;
+}
+
+.back{
+    text-align: left;
+    margin-left: 15%;
+}
+.detail-container h1,.detail-container h2,.adding-container h2,.board_content h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.detail-container a{
+    border: 2.5px solid #4d5cbb;
+    color: black;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.detail-container a:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}
+
+.task-creation{
+    text-align: right;
+    margin-right: 24%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.taskadd{
+    border: 2.5px solid #4d5cbb;
+    color: black;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.taskadd:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}
+
+/* teamcreate */
+.teamcreate{
+    margin-top: 45px;
+}
+
+.teamcreate h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* project-details */
+.project-details{
+    text-align: center;
+}
+
+/* form-group */
+.form-group{
+    padding: 15px 0px;
+    text-align: justify;
+    margin-left: 25%;
+}
+
+.form-group label{
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    padding: 10px 10px;
+}
+
+/* type=text, textarea, select (users/status)*/
+.form-group input[type=text],.form-group textarea,.form-group select{
+    justify-content: center;
+    vertical-align: middle;
+    height: 20%;
+    box-sizing: border-box;
+    border: 2px solid #4d5cbb;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+    width: 28%;
+}
+
+/* form-date */
+.form-date{
+    border: 1.5px solid #4d5cbb;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group h5{
+    font-size: 18px;
+}
+
+/* table */
+table{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 70%;
+    position: relative;
+}
+
+td, th{
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+    vertical-align: top;
+}
+
+table tr .delete{
+    position: absolute;
+    top: 20px;
+    background-color: white;  
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2.5px solid #4d5cbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+table tr .delete:hover{
+    background-color: #4d5cbb; 
+    color: white;
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+}
+
+/* taskwprog */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.taskbox{
+    margin-bottom: 10px;
+}
+
+.taskbox a{
+    text-decoration: none;
+    color: black;
+}
+
+.taskbox a:hover{
+    text-decoration: underline;
+    color: #4d5cbb;
+}
+
+/* button */
+.butons{
+    display: flex;
+    justify-content: center;
+}
+
+/* button 2 types*/
+.detail-container input[type=submit]{
+    background-color: white;
+    padding: 8px 16px;
+    margin: 10px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2.5px solid #4d5cbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.detail-container input[type=submit]:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}
+
+.button{
+    background-color: white;
+    padding: 8px 16px;
+    margin: 10px 8px;
+    margin-left: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2.5px solid #4d5cbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #4d5cbb; 
+    color: white;
+    position: relative;
+    top: -1.5px;
+}

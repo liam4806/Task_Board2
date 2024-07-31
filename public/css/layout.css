@@ -1,0 +1,68 @@
+html{
+    background-color: #F4F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+h1 span{
+    color: #4d5cbb;
+    text-align: center;
+}
+
+/* header container_nav logo */
+header .container_nav .logo{
+    text-decoration: none;
+    color: #4d5cbb;
+}
+
+header .container_nav{
+    text-align: center;
+}
+
+/* nav bar */
+.container_nav nav{
+    margin-bottom: 25px;
+    position: sticky;
+    font-weight: 400;
+}
+
+hr{
+    border-top: 1.5px solid #4d5cbb;
+    margin: 20px 0px;
+}
+
+.container_nav nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_nav nav li{
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.container_nav nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container_nav nav li a:hover{
+    position: relative;
+    top: -2px;
+    text-decoration-color: #4d5cbb;
+    text-decoration: underline;
+    color: #4d5cbb;
+}
+
+/* footer */
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+    margin-top: 30px;
+}

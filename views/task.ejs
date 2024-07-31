@@ -1,8 +1,11 @@
 <%- include('./layout/header')%> <%- include('./layout/navbar')%>
+<link rel="stylesheet" href="/css/projectler.css">
 <main>
     <div class="detail-container">
             <div class="task-details">
-                <a href="/team/<%=teamid%>/project/<%=pjid%>">Back to Project Dashboard</a>
+                <div class="back">
+                    <a href="/team/<%=teamid%>/project/<%=pjid%>">Back to Project Dashboard</a>
+                </div>
                 <h2>Task Details</h2>
                 <form id="add-users" class="form-details" action="/update/<%=teamid%>/project/<%=pjid%>/task/<%=taskdata._id%>?_method=PUT" method="POST"> 
                 <input type="hidden" name="_method" value="PUT">  
@@ -25,22 +28,22 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="startdate">Start Date</label>
+                    <label for="startdate">Start Date:</label>
                     <input type="date" class="form-date" id="startdate" name="startdate" value="<%=taskdata.startdate.toISOString().substring(0, 10);%>">
                 </div>
                 <div class="form-group">
-                    <label for="enddate">End Date</label>
+                    <label for="enddate">End Date:</label>
                     <input type="date" class="form-date" id="enddate" name="enddate" value="<%=taskdata.enddate.toISOString().substring(0, 10);%>">
                 </div>
                 <div class="form-group">
-                    <label for="users">Users</label>
+                    <label for="users">Users:</label>
                     <select name="users" id="users" multiple>
                     <% users.forEach(user => { %>
                 <option value="<%= user.id %>" <% if (taskdata.users.includes(user.id)) { %>selected<% } %> > <%= user.name %></option>
                     <% }); %>
                 </select>
                 </div>
-                <input type="submit" value="Save">
+                <input type="submit" value="Save" class="button">
             </form>
             </div>
     </div>

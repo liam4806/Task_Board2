@@ -1,11 +1,12 @@
 <%- include('./layout/header')%> <%- include('./layout/navbar')%>
+<link rel="stylesheet" href="/css/projectler.css">
 <section class="dashboard">
   <div class="board_grid">
     <div class="board_content">
       <h1><%=team.team_name %> Dashboard</h1>
       <!-- Should be changed based on team name-->
       <div class="task-creation">
-        <a class="taskadd" href="/team/add_project/<%=team._id%>">Create a new project</a>
+        <a class="taskadd" href="/team/add_project/<%=team._id%>">Create a New Project</a>
       </div>
           <div class="detail-container">
             <div class="task-details">
@@ -16,19 +17,21 @@
                     <textarea name="team_name" id="title" height="50px;" required><%=team.team_name%></textarea> 
                 </div>
                 <div class="form-group">
-                    <label for="users">Users</label>
+                    <label for="users">Users:</label>
                     <select name="users" id="users" multiple required>
                     <% users.forEach(user => { %>
                 <option value="<%= user.id %>" <% if (team.users.includes(user.id)) { %>selected<% } %> > <%= user.name %></option>
                     <% }); %>
                 </select>
                 </div>
-                <input type="submit" value="Save">
-            </form>
-            <form action="/delete/team/<%=team._id%>/?_method=DELETE" method="POST" >
-                    <input type="hidden" name="_method" value="DELETE">
-                <input type="submit" value="Delete Team" class="delete">
+                <div class="butons">
+                  <input type="submit" value="Save">
                 </form>
+                <form action="/delete/team/<%=team._id%>/?_method=DELETE" method="POST" >
+                        <input type="hidden" name="_method" value="DELETE">
+                    <input type="submit" value="Delete Team" class="delete">
+                    </form>
+                </div>
             </div>
     </div>
     <% if(team.projects.length>0) {%>
